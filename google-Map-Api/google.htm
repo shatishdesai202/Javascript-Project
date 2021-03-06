@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+
+            var surat = {
+                lat: 21.1702,
+                lng: 72.8311
+            };
+
+            var options = {
+                    zoom: 4,
+                    center: surat
+            }
+            var map = new google.maps.Map(
+                document.getElementById('map'), options);
+            
+                var ahemadabad = {
+                    lat:23.0225,
+                    lng:72.5714
+                }
+
+                addMarker(surat)
+                addMarker(ahemadabad)
+                
+            function addMarker(surat) {
+
+                var marker = new google.maps.Marker({
+                    position: surat,
+                    map: map,
+                    title: 'Surat City Of Diamond!',
+                    icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                });
+            
+
+                
+            }
+
+            var infowindow = new google.maps.InfoWindow({
+                content: 'info Window'
+            });
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+
+
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhkh59OBS06W_R8e96WoLBGXU_yk8LNKc&callback=initMap">
+    </script>
+</body>
+
+</html>

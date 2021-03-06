@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic - Tac - Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <table class="table">
+            <tbody>
+                <span id="message"></span><br>
+                <button id="restart">restart</button><br>
+                <span>X score: <span id="scorex"></span> </span><br>
+                <span>O score: <span id="scoreo"></span> </span><br>
+                <button id="srestart">ScoreRestart</button><br>
+                <tr>
+                    <td class="btn btn-warning text-light display-2" style="height: 100px;
+                                                                                                                              width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r1" onclick="printfun('1')"></td>
+                    <br>
+                    <td class="btn btn-warning text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r2" onclick="printfun('2')"></td>
+                    <br>
+                    <td class="btn btn-warning text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r3" onclick="printfun('3')"></td>
+                </tr>
+                <tr>
+                    <td class="btn btn-info text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r4" onclick="printfun('4')"></td>
+                    <br>
+                    <td class="btn btn-info text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r5" onclick="printfun('5')"></td>
+                    <br>
+                    <td class="btn btn-info text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r6" onclick="printfun('6')"></td>
+                </tr>
+                <tr>
+                    <td class="btn btn-success text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r7" onclick="printfun('7')"></td>
+                    <br>
+                    <td class="btn btn-success text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r8" onclick="printfun('8')"></td>
+                    <br>
+                    <td class="btn btn-success text-light  " style="height: 100px;
+    width: 100px;
+    margin-bottom: 20px; margin-right:20px; font-size: 50px;" id="r9" onclick="printfun('9')"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

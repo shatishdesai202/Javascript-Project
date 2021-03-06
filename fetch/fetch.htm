@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch-api-using-fetch() </title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <button class="btn btn-md btn-primary mx-5" id="localFile">Local File</button>
+        <button class="btn btn-md btn-warning mx-5" id="jsonFile">Json File</button>
+        <button class="btn btn-md btn-info mx-5" id="external">External Api </button>
+        <button class="btn btn-md btn-info mx-5" id="postR">Post </button>
+    </div>
+    <div class="container" id='post'>
+        <div class="row">
+            <form action="">
+                    <input type="text" class="form-control bg-warning text-info" id="eTitle" placeholder="Enter Title" required>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="text" class="col-md-8  bg-warning" placeholder="Enter Body" id="eBody" required>
+                    <input type="submit" class="col-md-4 form-control btn btn-success" id="submit" required>
+        </form>
+        </div>
+        <br><br><br>
+        <div class="card bg-success ">
+            <div class="card-body">
+               
+                <p class="card-text text-danger" id="postre"></p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container" id="show">
+        <div class="card bg-success ">
+            <div class="card-body">
+                <h5 class="card-title" id="titles"></h5>
+                <p class="card-text text-danger" id="text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="fetch.js"></script>
+</body>
+
+</html>

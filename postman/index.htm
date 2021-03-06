@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="prism.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Welcone To PostMan Clone</h1>
+    </div>
+    <div class="container">
+        <div class="form-group row">
+            <label for="url" class="col-sm-2 col-form-label">URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="url">
+            </div>
+        </div>
+        <!-- radio button -->
+      
+    <fieldset class="form-group">
+        <!-- request type -->
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Request Type</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="requestType" id="get" value="GET" checked>
+                    <label class="form-check-label" for="get">
+                        GET
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="requestType" id="post" value="POST">
+                    <label class="form-check-label" for="post">
+                        POST
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <!-- format type -->
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Contant Type</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="formattype" id="json" value="json" checked>
+                    <label class="form-check-label" for="json">
+                        JSON Format
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="formattype" id="parameter" value="parameter">
+                    <label class="form-check-label" for="parameter">
+                        PARAMETERIZED 
+                    </label>
+                </div>
+
+            </div>
+        </div>        
+
+    </fieldset>
+    
+    <div  id="jsonformat">
+        <div class="form-group row" >
+            <label for="url" class="col-sm-2 col-form-label">Json Format</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="jsonr" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div  id="parameterformat">
+        <div class="form-group row" >
+            <label for="url" class="col-sm-2 col-form-label">parmeter1</label>
+
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="parameterkey1" placeholder="key 1">
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="parametervalue1" placeholder="value 1">
+            </div>
+                <button class="btn btn-primary" id="plus">+</button>
+        </div>
+        <div id="added"></div>
+    </div>
+    <button id="submit" class="btn btn-md btn-primary">Submit</button>
+    <div  id="responceType">
+        <div class="form-group row" >
+            <label for="responceText" id="responcelabel" class="col-sm-2 col-form-label">Responce Type</label>
+            <div class="col-sm-10">
+                <!-- <textarea class="form-control" id="responceText" rows="3"></textarea> -->
+
+                <pre id="responceText" class="language-javascript">
+                    <code id="responceText" class="language-javascript">
+                        hj
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="prism.js"></script>
+  </body>
+</html>
